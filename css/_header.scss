@@ -1,0 +1,90 @@
+header{
+    position:fixed;width:225px;background:$darkgreen;color:white;left:71px;padding:50px 1px;z-index:5;transition:700ms;max-width: unset;max-height: unset;
+    @media(max-width:767px){
+        left:0;padding:90px 1px 50px;max-width:0;max-height:50px;background:transparent;
+    }
+    label{
+        padding:40px 40px 20px 20px;position: absolute;height:120px;width:120px;background:$darkgreen;left:0;top:0;border-radius:0 0 94% 0 ;
+        @media(min-width:767px){
+            display: none;
+        }
+        span{
+            width:35px;height:4px;background: white;position: absolute;border-radius:26px;
+            &:before{
+                position: absolute;top:-13px;background: white;content: "";width: 80%;height: 100%;border-radius:26px;
+            }
+            &:after{
+                position: absolute;top:13px;background: white;content: "";width: 120%;height: 100%;border-radius:26px;
+            }
+        }
+    }
+    ul{
+        max-width:0;overflow: hidden;
+        @media(min-width:767px){
+            max-width: none;
+        }
+        .active{
+            span{
+                animation:widthGrow 500ms;width:36px;height:3px;position: absolute;background: white;top:50%;
+            }
+            
+        }
+        li{
+            position: relative;direction:ltr;
+           
+            a{
+            width:max-content;  font-size:22px;font-family: "Montserrat-Regular";  display:block;padding:10px 10px 10px 46.5px;text-decoration: none;color: white;
+             
+                &:hover{
+                    text-decoration: none;color: white;
+                }
+                &:focus{
+                    color: $lightgreen;
+                }
+            }
+        }
+    }
+}
+@keyframes widthGrow{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:36px;
+    }
+}
+
+@keyframes background{
+    0%{
+        background: transparent;
+    }
+    20%{
+        background: $darkgreen;
+    }
+    100%{
+        background: $darkgreen;
+    }
+}
+
+
+header.active{
+    max-width:100%;background:$darkgreen;max-height:700px;width:100%;animation:menuWidth 700ms;
+    @media(min-width:767px){
+        max-width:unset;max-height:unset;
+    }
+    ul{
+        max-width:700px;max-height:700px;
+        @media(min-width:767px){
+            max-width:unset;max-height:unset;
+        }
+    }
+}
+
+@media(min-width:767px){
+    header.scrollDown{
+        opacity: 0.1;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

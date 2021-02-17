@@ -1,0 +1,86 @@
+.ourfeet{
+    padding:49px 0 73px;
+    
+    .col-md-6{
+        margin:0 auto;
+        &:first-child{
+            padding:5%;position: relative;
+            @media(max-width:1200px){
+                padding:0;margin:auto;
+            }
+            @media(max-width:1000px){
+                padding:0 15px;margin:auto 0;
+            }
+
+            img{
+                &:first-child{
+                    padding:5%;
+                    @media(max-width:1000px){
+                        padding:0;
+                    }
+                }
+            }
+            .top-img{
+              border:5px solid white;  position: absolute;top:0;right:0;height:183px;
+              @media(max-width:1000px){
+                display: none;
+            }
+            }
+            .bottom-img{
+               border:5px solid white; position: absolute;bottom:0;left:0;height:183px;
+               @media(max-width:1000px){
+                display: none;
+            }
+            }
+        }
+        &:last-child{
+            color: $darkgreen;margin:auto 0;padding-left:80px;
+            @media(max-width:1000px){
+                padding:0 15px;
+            }
+          
+            h2{
+               margin-bottom:20px; font-family: "Montserrat-Bold";font-size:36px;
+               @media(max-width:1000px){
+                font-size:30px;
+            }
+               img{
+                position: relative;
+                left: 69px;
+                top:10px;
+                width: 67px;
+                @media(max-width:1000px){
+                   width:50px;
+                }
+                @media(max-width:767px){
+                    left:30px;
+                }
+            }
+            }
+            .p1{
+              margin-bottom:30px;  font-family:"Montserrat-Medium";font-size:24px;
+              @media(max-width:1000px){
+                font-size:20px;
+            }
+            }
+            .p2{
+             line-height:30px; margin-bottom:35px;  font-family:"Montserrat-Regular";font-size:22px;
+             @media(max-width:1000px){
+                 font-size:18px;
+             }
+            }
+            .p3{
+                line-height:30px;  font-size:22px;font-family: "Montserrat-Light";padding-left:13.5px ;position: relative;
+                @media(max-width:1000px){
+                    font-size:15px;
+                }
+                &:before{
+                    content:"";background:$darkgreen;height:92px;width:3px;position: absolute;left:0;top:0;
+                    @media(max-width:767px){
+                       height:130px;
+                    }
+                }
+            }
+        }
+    }
+}

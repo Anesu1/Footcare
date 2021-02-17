@@ -1,0 +1,34 @@
+.dduknow{
+    color:$darkgreen;padding:146px 0;position: relative;z-index: 2;
+    @media(max-width:767px){
+        padding:30% 0 10%;
+    }
+    h2{
+        font-family:"Montserrat-Bold";font-size:36px;margin-bottom:43px;
+        @media(max-width:1000px){
+            font-size:30px;
+            }
+            @media(max-width:767px){
+                font-size:25px;
+            }
+            @media(max-width:300px){
+               font-size:20px;
+            }
+        img{
+            position: relative;
+            left: 69px;
+            top:10px;
+            width: 67px;
+            @media(max-width:767px){
+                left:5px;width:50px;
+            }
+        }
+    }
+    p{
+        font-family:"Montserrat-Regular";font-size:22px;line-height:30px;
+        @media(max-width:1000px){
+            font-size:18px;
+        }
+    }
+}
+

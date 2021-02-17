@@ -1,0 +1,61 @@
+.testimonials{
+    background:$lightgreen;color:$darkgreen;padding:150px 0;
+    @media(max-width:767px){
+        padding:10% 0;
+    }
+    .row{
+        @media(max-width:767px){
+            flex-direction: column-reverse;
+        }
+    }
+    p{
+        font-family:"Montserrat-Regular";font-size:22px;line-height:30px;
+        @media(max-width:1000px){
+            font-size:18px;
+        }
+        span{
+            font-size:36px;font-family:"Montserrat-Bold";
+            @media(max-width:767px){
+                font-size:30px;
+            }
+        }
+    }
+    .col-lg-5{
+        padding-left:100px;
+        @media(max-width:1000px){
+            padding-left:30px;
+        }
+        @media(max-width:767px){
+            padding:0 15px;
+        }
+        br{
+            @media(max-width:578px){
+                display: none;
+            }
+        }
+        h2{
+            font-family:"Montserrat-Bold";font-size:36px;margin-bottom:20px;
+            @media(max-width:767px){
+                font-size:25px;
+            }
+            @media(max-width:300px){
+               font-size:23px;
+            }
+            img{
+                position: relative;
+                left: 69px;
+                top:10px;
+                width: 67px;
+                @media(max-width:767px){
+                    width:50px;left:15px;
+                }
+            }
+        }
+        p{
+            font-family:"Montserrat-Medium";font-size:36px;line-height: 40px;
+            @media(max-width:767px){
+                font-size:20px;
+            }
+        }
+    }
+}
